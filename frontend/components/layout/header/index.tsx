@@ -1,10 +1,10 @@
 import { PreHeader } from "./preheader";
 
-export function Header() {
+export function Header(): JSX.Element {
   return (
-    <header>
+    <header className="bg-brand">
       <PreHeader />
-      <section>
+      <section className='container mx-auto'>
         <div>Mobile Search</div>
         <div>Logo</div>
         <div>Mobile Menu</div>

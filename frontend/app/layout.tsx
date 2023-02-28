@@ -1,4 +1,4 @@
-import { Header } from '~/components/shared/header'
+import { Header } from '~/components/layout/header'
 import '~/styles/globals.scss'
 
 export const metadata = {

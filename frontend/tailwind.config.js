@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,13 +8,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    'brand': {
-      light: '#8CC1DC', 
-      DEFAULT: '#3399CC',
-      dark: '#1271A0'
-
+    extend: {
+      colors: {
+        'brand': {
+          light: '#8CC1DC', 
+          DEFAULT: '#3399CC',
+          dark: '#1271A0'
+        },
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
